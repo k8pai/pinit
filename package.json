@@ -1,0 +1,17 @@
+{
+	"name": "urlsaver",
+	"version": "1.0.0",
+	"description": "a simple browser extension for saving current tab urls",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "k8pai",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.2.6"
+	},
+	"dependencies": {
+		"react-icons": "^4.7.1"
+	}
+}

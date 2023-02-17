@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="output.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="min-w-[400px] max-w-screen box-border w-full p-3">
+		<input id="inpField" type="text" name="url_field" id="url_field" class="px-3 py-2 w-full border-2 rounded-md shadow-md border-green-400/80 outline-none" placeholder="Type your url over here...." />
+		<div>
+			<button id="showLinks" class="px-3 py-2 mr-2 mt-2 rounded-md shadow-md border-2 border-green-400/80 text-green-400"> recently saved </button>
+			<button id="saveInput" class="px-3 py-2 mr-2 mt-2 rounded-md shadow-md border-2 border-green-400/80 text-green-400"> Add Link </button>
+			<button id="saveUrl" class="px-3 py-2 mr-2 mt-4 rounded-md shadow-md border-2 border-green-400/80 text-green-400"> Tab URL </button>
+			<button id="deleteAll" class="px-3 py-2 mr-2 mt-4 rounded-md shadow-md border-2 border-green-400/80 text-green-400"> Delete All </button>
+		</div>
+		<div class="p-3 mt-2 rounded-md shadow-2xl border-2 border-green-400/80">
+			<h1 class="mb-2 text-green-400/70 capitalize font-semibold text-3xl">saved links</h1>
+			<hr />
+			<ul id="urlUlContainer" class="">
+
+			</ul>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>
