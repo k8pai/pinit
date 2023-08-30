@@ -8,48 +8,77 @@
 
 	<body>
 		<div
-			class="min-w-[400px] max-w-[500px] box-border w-full p-3 space-y-3"
+			class="min-w-[400px] max-w-[600px] box-border w-full p-3 space-y-3"
 		>
-			<input
-				id="inpField"
-				type="text"
-				name="url_field"
-				id="url_field"
-				class="p-2 w-full border-2 rounded-md shadow-md border-green-400/80 outline-none"
-				placeholder="Type here to save."
-			/>
 			<div class="flex w-full space-x-2">
+				<input
+					type="text"
+					name="email_field"
+					id="email_field"
+					class="p-2 w-full border-2 rounded-md shadow-md border-green-400/80 outline-none"
+					placeholder="Your email..."
+				/>
 				<button
-					id="showLinks"
+					id="saveEmail"
 					class="px-3 py-2 flex-grow rounded-md shadow-md border-2 border-green-400/80 text-green-400"
 				>
-					Recent
+					save
 				</button>
-				<button
-					id="saveInput"
-					class="px-3 py-2 flex-grow rounded-md shadow-md border-2 border-green-400/80 text-green-400"
-				>
-					Add
-				</button>
+			</div>
+			<p
+				class="email-info text-red-500 font-semibold capitalize"
+				id="email-info"
+			></p>
+			<div id="savedMails" class="savedMails"></div>
+			<div class="flex w-full space-x-2">
 				<button
 					id="saveUrl"
 					class="px-3 py-2 flex-grow rounded-md shadow-md border-2 border-green-400/80 text-green-400"
 				>
-					Current URL
+					Save Active Tab.
 				</button>
+
 				<button
-					id="deleteAll"
+					id="window"
 					class="px-3 py-2 flex-grow rounded-md shadow-md border-2 border-green-400/80 text-green-400"
 				>
-					Delete All
+					Get All Tabs.
 				</button>
+				<a
+					href="https://linkwrap.k8pai.dev/extention"
+					target="_blank"
+					class="px-3 py-2 flex-grow underline text-green-400"
+				>
+					Manage Links
+				</a>
 			</div>
 			<div class="p-3 rounded-md shadow-2xl border-2 border-green-400/80">
-				<h1
-					class="mb-2 text-green-400/70 capitalize font-semibold text-3xl"
-				>
-					saved links
-				</h1>
+				<div class="flex items-center justify-between">
+					<h1
+						class="mb-2 text-green-400/70 capitalize font-semibold text-3xl"
+					>
+						saved links
+					</h1>
+					<button
+						id="deleteAll"
+						class="w-fit rounded-md shadow-md text-red-400"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+							/>
+						</svg>
+					</button>
+				</div>
 				<hr />
 				<ul id="urlUlContainer" class=""></ul>
 			</div>
